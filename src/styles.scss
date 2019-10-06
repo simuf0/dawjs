@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+input {
+  padding: 0;
+  font: inherit;
+}
