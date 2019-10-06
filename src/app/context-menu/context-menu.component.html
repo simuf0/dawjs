@@ -1,0 +1,14 @@
+<nav class="context-menu" [ngStyle]="{
+  'left': clientPosition.x + 'px',
+  'top': clientPosition.y + 'px'
+}">
+
+  <ul class="context-menu-items" *ngFor="let items of itemsGroup">
+
+    <li class="context-menu-item" *ngFor="let item of items">
+      <button (mousedown)="item.onClick()">{{ item.title }}</button>
+    </li>
+    
+  </ul>
+
+</nav>

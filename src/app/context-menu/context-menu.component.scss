@@ -1,0 +1,40 @@
+@import "src/colors.scss";
+
+nav.context-menu {
+  position: absolute;
+  min-width: 180px;
+  max-width: 250px;
+  background-color : $color-context_menu-bg;
+  border: 1px solid $color-context_menu-text;
+}
+
+ul.context-menu-items {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0;
+  &:not(:last-child) {
+    border: 1px solid $color-context_menu-text;
+  }
+}
+
+li.context-menu-item {
+  height: 13px;
+  line-height: 12px;
+  margin: 1px 0;
+}
+
+li.context-menu-item button {
+  position: relative;
+  bottom: 1px;
+  width: 100%;
+  height: 100%;
+  padding: 0 6px 0 16px;
+  font: bold .65em Helvetica;
+  text-align: left;
+  color: $color-context_menu-text;
+  &:hover {
+    color: $color-context_menu-text-hover;
+    background-color: $color-context_menu-bg-hover;
+  }
+}
+
